@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Cookies</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section class="hero">
+        <div class="logo" aria-hidden="true">YT</div>
+        <div>
+          <p class="eyebrow">cookies.txt exporter</p>
+          <h1>YouTube Cookies</h1>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="description">
+          Ambil cookies YouTube dari browser ini dan simpan sebagai
+          <strong>cookies.txt</strong> yang kompatibel untuk <strong>yt-dlp</strong>
+          dan <strong>pytube</strong>.
+        </p>
+
+        <button id="exportBtn" class="primary" type="button">
+          Download cookies.txt
+        </button>
+
+        <div id="status" class="status" role="status">
+          Siap mengambil cookies YouTube.
+        </div>
+      </section>
+
+      <section class="usage">
+        <h2>Cara pakai</h2>
+        <ol>
+          <li>Login YouTube di browser ini.</li>
+          <li>Klik tombol download.</li>
+          <li>Gunakan file <code>cookies.txt</code> di yt-dlp atau pytube.</li>
+        </ol>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
